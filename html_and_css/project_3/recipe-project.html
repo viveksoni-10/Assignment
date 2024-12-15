@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .navbar ul {
+        display: flex;
+        list-style: none;
+      }
+      ul a {
+        margin-top: 2px;
+        padding: 34px;
+        text-decoration: none;
+        position: relative;
+        top: -19px;
+        left: 1111px;
+        color: aliceblue;
+        font-size: 23px;
+      }
+      .navbar {
+        background-color: cadetblue;
+        background: rgb(63, 94, 251);
+        background: radial-gradient(
+          circle,
+          rgba(63, 94, 251, 1) 0%,
+          rgba(252, 70, 107, 1) 100%
+        );
+      }
+      p {
+        font-size: 33px;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        color: aliceblue;
+      }
+
+      .container{
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(233,148,174,0.48158268434326856) 100%);
+      }
+
+      .center-container{
+        display: flex;
+        flex-direction: column;
+        gap:100px;
+        margin: 40px;
+        border: 2px solid blue;
+      }
+
+      .container-box{
+        width: 70vw;
+        margin: auto;
+        border: 1px solid brown;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        background: rgb(238,174,202);
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+      }
+
+      .left-item{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .right-item{
+        position: relative;
+        overflow: hidden;
+        transition:all 0.6s linear 0s;
+      }
+
+      .right-item .overplay{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(9, 8, 8, 0.804);
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        border-radius: 10px;
+        opacity: 0;
+        transition:all 0.6s linear 0s; 
+      }
+
+      .right-item .overplay:hover{
+        opacity: 1;
+        /* transform: scale(1.5); */
+      }
+
+      .right-item .overplay span{
+        color:#fff;
+        font-size: 16px;
+      }
+
+      .right-item img{
+        height: 180px;
+        border-radius: 10px;
+        border: 1px solid rosybrown;
+        transition:all 0.6s linear 0s; 
+        
+
+      }
+      .right-item:hover{
+        transform: scale(1.5);
+        cursor: pointer;
+
+      }
+
+      .left-item h2{
+        font-size: 1.5rem;
+      }
+
+      .ing-box{
+        display: flex;
+        flex-direction: column;
+        font-size:20px;
+      }
+
+      .recipe-box{
+        font-size: 23px;
+     
+      }
+
+      .footer-box p{
+        background-color: rgb(14, 15, 15);
+        text-align: center;
+      }
+      .footer-box {
+        position: relative;
+        top: -51px;
+      }
+
+  
+     
+    </style>
+  </head>
+  <body>
+<div class="container">
+        <section>
+      <div class="navbar">
+        <p>Codehelp</p>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Service</a></li>
+        </ul>
+      </div>
+       </section>
+
+      <div class="center-container">
+        <section>
+            <div class="container-box">
+                <div class="left-item">
+                    <h2>Gulab jamun</h2>
+                    <h2>ingredients</h2>
+                    <ul class="ing-box" >
+                        <li>Sugar</li>
+                        <li>Bread</li>
+                        <li>Oid</li>
+                    </ul>
+                    <h2>Recipe</h2>
+                    <ol class="recipe-box">
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quia </li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor, sit amet.</li>
+                        
+                     </ol>
+                </div>
+                 <div class="right-item">
+                  <img src="gulab-jamun.jpg" alt="gulab-jamun">
+                  <div class="overplay">
+                    <span>click here to buy</span>
+                  </div>
+                </div>
+        </section>
+
+        <section>
+            <div class="container-box">
+                <div class="left-item">
+                    <h2>Barfi</h2>
+                    <h2>ingredients</h2>
+                    <ul >
+                        <li>Sugar</li>
+                        <li>Bread</li>
+                        <li>Oid</li>
+                    </ul>
+                    <h2>Recipe</h2>
+                    <ol>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quia </li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor, sit amet.</li>
+                        
+                     </ol>
+                </div>
+                 <div class="right-item">
+                  <img src="images.jpg" alt="barfi">  
+                  <div class="overplay">
+                    <span>click here to buy</span>
+                  </div>
+                </div>
+        </section>      
+      </div>     
+ </div>
+
+      <footer>
+        <div class="footer-box">
+          <p>Copyright&copy; hello ji</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

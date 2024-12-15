@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="name">Name:</label>
+            <input 
+            type="text"
+            name="name"
+            id="name"
+            title="Enter name"
+            placeholder="Enter name"
+            required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter password" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter email">
+        </div>
+        <h5>my Favourite fruits</h5>
+        <div>
+            <label for="banana">banana</label>
+            <input type="checkbox" name="banana" id="banana">
+            <label for="apple">apple</label>
+            <input type="checkbox" name="apple" id="apple">
+            <label for="mango">mango</label>
+            <input type="checkbox" name="mango" id="mango">
+        </div>
+        <h5>choose your gender</h5>
+        <div>
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <br>
+        <div>
+            <label for="my-country">our country:</label>
+            <select name="country" id="my-country">
+                <option value="india">india</option>
+                <option value="usa">usa</option>
+                <option value="pakistan">pakistan</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="salary">salary</label>
+            <input 
+            type="number"
+            name="salary"
+            id="salary"
+            min="1000"
+            max="100000"
+            step="500">
+        </div>
+        <br>
+        <div>
+            <label for="dob">date of birth:</label>
+            <input
+            type="date"
+            name="dob" 
+            id="dob"
+            min="2001-01-01"
+            max="2024-09-03">
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>contact</legend>
+                <label for="phone">phone:</label>
+                <input type="tel" name="phone-number" id="phone"><br><br>
+                <label for="Address">Address:</label>
+                <input type="text" name="Address" id="Address"></input>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <!-- <button type="submit">Summit</button> -->
+             <button>Summit</button>
+        </div>
+    </form>
+</body>
+</html>

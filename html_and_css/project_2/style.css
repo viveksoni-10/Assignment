@@ -1,0 +1,217 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0% 5%;
+}
+
+#navbar{
+    display: flex;
+    font-family: 'Gruppo', sans-serif;
+    font-family: 'Laila', sans-serif; 
+    position: relative;
+}
+
+/* #navbar{
+    position: relative;
+} */
+
+#logo{
+    margin: 0px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 13px -6px;
+    padding: 0px 10px;
+    border-radius: 100px;
+    
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 77%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    display: block;
+    margin: 23px 28px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+   
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+#home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 270px;
+  font-family: 'Gruppo', sans-serif;
+  font-family: 'Laila', sans-serif;
+
+}
+#home::before{
+    content: "";
+    background:url(../imagess/tablefrute.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 44%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+.h-primary{
+    color: white;
+    font-size: 2.3rem;
+}
+
+#home p{
+    color: white;
+    font-size: 3.4;
+}
+.bth{
+    background-color:brown;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: 'Gruppo', sans-serif;
+    font-family: 'Laila', sans-serif;
+    padding: 6px 20px;
+    margin: 8px 9px;
+    cursor: pointer;
+}
+.container{
+     margin: 45px;
+}
+
+.center{
+    text-align: center;
+    font-family: 'Gruppo', sans-serif;
+    font-family: 'Laila', sans-serif;
+}
+
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 39px;
+
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 20px 20px;
+    border-radius: 23px;
+}
+
+#services .box img{
+    margin: auto;
+    height: 160px;
+    align-items: center;
+}
+
+/* client-section */
+
+#heading{
+    text-align: center;
+}
+
+#client-section::before{
+    content: "";
+    background:url(../imagess/pexels-cottonbro-studio-4752861.jpg);
+    position:absolute;
+    height: 37%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#clients{
+    display: flex;
+    margin-block: auto;
+    height: 145px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.client-item {
+    margin: 60px;
+    margin-top: 120px;
+}
+.client-item img{
+    height: 100px;
+  
+}
+
+/* contact section */
+#contact{
+    position: relative;
+    margin-top: 35px;
+   
+}
+
+#contact::before{
+    content:"";
+    background: url(../imagess/contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#contact-box input,textarea{
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 10px;
+    font-family: 'Gruppo', sans-serif;
+    font-family: 'Laila', sans-serif;
+   
+}
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 22px;
+}
+
+#contact-box label{
+
+    font-family: 'Gruppo', sans-serif;
+    font-family: 'Laila', sans-serif;
+    
+}
+
+footer{
+    background-color: black;
+    color:white;
+}
+
