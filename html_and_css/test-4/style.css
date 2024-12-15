@@ -9,7 +9,7 @@ body {
   background-color: rgb(235, 235, 235);
 }
 .main-container {
-  background-image: url("/test-4/image/family-camping-at-sunset.jpg");
+  background-image: url("./image/family-camping-at-sunset.jpg");
   background-repeat: no-repeat; /* Ensures the image is not repeated */
   background-size: cover; /* Makes the image cover the entire area */
   background-position: center; /* Center the image */
