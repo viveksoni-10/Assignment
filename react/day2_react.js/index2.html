@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Basic ReactJS</title>
+	<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+	<div id="root"></div>
+	<script>
+		// Create the heading
+		const heading = React.createElement("h1", { className: "heading" }, "Topics Covered");
+
+		// Create the description
+		const description = React.createElement(
+			"p",
+			null,
+			"The following is a list of all the topics we cover in the MDN learning area."
+		);
+
+		// Create the list of topics
+		const topics = [
+			{
+				title: "Getting started with the web",
+				link: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web",
+				description: "Provides a practical introduction to web development for complete beginners."
+			},
+			{
+				title: "HTML — Structuring the web",
+				link: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics",
+				description: "HTML is the language that we use to structure the different parts of our content and define what their meaning or purpose is. This topic teaches HTML in detail."
+			},
+			{
+				title: "CSS — Styling the web",
+				link: "https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text",
+				description: "CSS is the language that we use to control our web content's style and layout, as well as adding behavior like animation. This topic provides comprehensive coverage of CSS."
+			}
+		];
+
+		// Create list items for topics
+		const listItems = topics.map((topic, index) =>
+			React.createElement(
+				"div",
+				{ key: index, className: "topic-item"},
+				React.createElement(
+					"a",
+					{ href: topic.link, target: "_blank" },
+					topic.title
+				),
+				React.createElement(
+					"p",
+					null,
+					topic.description
+				)
+			)
+		);
+
+		// Combine all elements
+		const app = React.createElement("div" , {style: { margin: "20px 70px " }}, heading, description, listItems);
+
+		// Render the app
+		const rootDiv = document.getElementById("root");
+		const reactRoot = ReactDOM.createRoot(rootDiv);
+		reactRoot.render(app);
+	</script>
+</body>
+
+</html>

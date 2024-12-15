@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReactJS with CDN</title>
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    .main-container {
+      margin: 10px 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    // Correct React.createElement usage
+    // const app = React.createElement(
+    //   "div",
+    //   { className: "main-container" },
+    //   React.createElement("h1", { className: "heading" }, "Learn Web Development"),
+    //   React.createElement("p", { className: "paragraph1" }, "Welcome to the MDN learning area. This set of articles aims to guide complete beginners to web development with all that they need to start coding websites."),
+
+    //   React.createElement("span", { className: "paragraph2" }, "The aim of this area of MDN is not to take you from 'beginner' to 'expert' but to take you from 'beginner' to 'comfortable'. From there, you should be able to start making your way, learning from the "),
+
+    //   React.createElement("a", { href: "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" }, "goto MDN website "),
+    //   React.createElement("span", {}, "and other intermediate to advanced resources that assume a lot of previous knowledge."),
+
+    //   React.createElement("p", { className: "paragraph3" }, "If you are a complete beginner, web development can be challenging we will hold your hand and provide enough detail for you to feel comfortable and learn the topics properly. You should feel at home whether you are a student learning web development (on your own or as part of a class), a teacher looking for class materials, a hobbyist, or someone who just wants to understand more about how web technologies work."),
+    // );
+
+    // // Use ReactDOM.render for React 17
+    // ReactDOM.render(app, document.getElementById("root"));
+
+
+
+
+
+
+    // in jsx version
+    const App = () => (
+      <div className="main-container">
+        <h1 className="heading">Learn Web Development</h1>
+        <p className="paragraph1">Welcome to the MDN learning area. This set of articles aims to guide complete beginners to web development with all that they need to start coding websites.</p>
+        <p className ="paragraph2">The aim of this area of MDN is not to take you from "beginner" to "expert" but to take you from "beginner" to "comfortable." From there, you should be able to start making your way, learning from {" "}<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">go to MDN page</a>{" "}and other intermediate to advanced resources that assume a lot of previous knowledge.</p>
+        <p className="paragraph3">If you are a complete beginner, web development can be challenging we will hold your hand and provide enough detail for you to feel comfortable and learn the topics properly. You should feel at home whether you are a student learning web development (on your own or as part of a class), a teacher looking for class materials, a hobbyist, or someone who just wants to understand more about how web technologies work. </p>
+      </div>
+    );
+
+    ReactDOM.render(<App/>, document.getElementById("root"));
+  </script>
+</body>
+
+</html>
