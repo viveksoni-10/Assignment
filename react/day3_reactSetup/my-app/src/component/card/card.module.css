@@ -1,0 +1,10 @@
+.container{
+  position: relative;
+  background-color: #f0f0f0;
+  
+  img{
+    height: 200px;
+    /* width: 100px; */
+  }
+
+}
